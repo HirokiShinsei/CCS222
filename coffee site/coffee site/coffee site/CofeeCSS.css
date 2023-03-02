@@ -1,0 +1,380 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 30px;
+}
+
+body::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}
+
+.main{
+    background: url(assets/bg.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-position: center bottom;
+    align-items: center;
+}
+
+.navbar{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background:#2E2822;
+    z-index: 99999;
+}
+
+.navbar .logo{
+    height: 60%;
+    padding: 0px 40px;
+}
+
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin:  0 8px;
+    display: inline-block;
+    line-height: 80px
+}
+
+.navbar ul li a{
+    font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 10px 15px;
+	text-decoration: none;
+	transition: .3s ease-in-out;
+}
+
+.navbar ul li a:hover{
+	background: black;
+	border-radius: 2px;
+}
+
+.slogan {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 80%;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    transform: translate(-50%, -30%);
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    animation: slidein 1s forwards;
+}
+
+@keyframes slidein {
+    from {
+      top: 100%;
+      opacity: 0;
+    }
+    to {
+      top: 50%;
+      opacity: 1;
+    }
+}
+
+.reviewsSection{
+    padding: 50px 0;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.reviewsSection h2{
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 40px;
+}
+.mainReviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.review{
+    width: 30%;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reviewtext{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.reviewer{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    font-style: italic;
+}
+
+.productSection{
+    padding: 50px 0;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.productsSection h2{
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.mainProducts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.product{
+    width: 250px;
+    height: 500px;
+    margin: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s ease-in-out;
+    
+}
+
+.product:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.product img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.product h3{
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product .price{
+    font-size: 18px;
+    color: green;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product .description{
+    font-size: 16px;
+    margin: 20px;
+    color: gray;
+    display:block;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    text-align: justify;
+}
+
+.product:hover .description{
+    transition: 0.2s ease-in-out;
+    display:flex;
+}
+
+.about{
+    padding: 50px 0;
+    text-align: center;
+    background: #E2D0BF;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h2{
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: -30px;
+}
+
+.about p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 50px;
+}
+
+.Mission{
+    width: 94%;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255,255,255, 0.3);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+.Vission{
+    width: 94%;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255,255,255, 0.3);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+.CoreValues{
+    width: 94%;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255,255,255, 0.3);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.Mission h3{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.Mission p{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: justify;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.Vission h3{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.Vission p{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: justify;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.CoreValues h3{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.CoreValues p{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: justify;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+footer {
+    background-color: #2E2822;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    position:absolute;
+    width: 100%;
+}
+
+.copyright p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.mainForm{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.form-group {
+    margin-bottom: 25px;
+}
+  
+.label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+  
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+  
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+  

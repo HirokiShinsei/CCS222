@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Work Sans
+Author: Wei Huang
+Url: http://www.fontsquirrel.com/fonts/work-sans
+
+Font: Courgette
+Author: Sorkin Type Co
+Url: https://www.fontsquirrel.com/fonts/courgette
